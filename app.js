@@ -38,19 +38,8 @@ class Weather {
         `;
         this.parent.append(article)
     }
-    // https://openweathermap.org/img/wn/02d@2x.png
 }
 fetch(`http://api.openweathermap.org/data/2.5/weather?q=${nameOfPalce}&units=metric&APPID=5d066958a60d315387d9492393935c19`)
 .then((response) => response.json())
     .then((data) => new Weather(data, parent).render());
-
-
-
-    // fetch("http://api.openweathermap.org/data/2.5/weather?q=KYIV&units=metric&APPID=5d066958a60d315387d9492393935c19")
-    // .then((response) => response.json())
-    // .then(data => {document.write(data.main.temp);
-    //                 document.write(data.main.pressure)
-    //                 document.write(data.main.humidity)
-    //                 document.write(data.wind.speed)
-    //                 document.write(data.wind.deg)
 
