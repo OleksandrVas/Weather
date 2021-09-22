@@ -1,7 +1,7 @@
 // function showWeather() {
 //     let cityNameOfWeatherMap = prompt("Введите город , погоду которого вы хотите узнать")5d066958a60d315387d9492393935c19
 // 4580297501b1307ec7d2c6b4e05b9ad7
-    let data = fetch(`https://api.openweathermap.org/data/2.5/weather?q=KYIV&units=metric&APPID=4580297501b1307ec7d2c6b4e05b9ad7`)
+    let data = fetch(`https://api.openweathermap.org/data/2.5/weather?q=KYIV&units=metric&APPID=7e9bc4bbcbfc86f488a35a4314b633c0`)
     .then(response => response.json())
     .then(data => console.log(data))
 
@@ -40,7 +40,7 @@ class Weather {
     }
 
 }
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=${nameOfPalce}&units=metric&APPID=4580297501b1307ec7d2c6b4e05b9ad7`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${nameOfPalce}&units=metric&APPID=7e9bc4bbcbfc86f488a35a4314b633c0`)
 .then((response) => response.json())
     .then((data) => new Weather(data, parent).render());
 
