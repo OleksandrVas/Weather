@@ -29,7 +29,7 @@ class Weather {
                     <hr>
                     <div class="article-temp">Tempereture :${Math.round(this.temp)}&degC</div>
                     <div class="article-pres">Pressure :  ${this.pressure} hPa</div>
-                    <div class="article-hum">Humitity ${this.humidity}%</div>
+                    <div class="article-hum">Humidity ${this.humidity}%</div>
                     <div class="article-sp">Speed : ${this.speed} m/s</div>
                     <div class="article-deg">Deg. : ${this.deg}&deg</div>
                     <div class="article-main">Sky : <span>${this.main}</span></div>
